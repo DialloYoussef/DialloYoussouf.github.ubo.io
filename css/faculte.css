@@ -1,0 +1,137 @@
+.banniere_ad{
+    width: 100%;
+    height: 455px;
+    /* background-image: url(./img/banniere.jpg);
+    background-repeat: no-repeat;
+    background-position: center; */
+    background: url(../img/IMG-20220909-WA0013.jpg) center center/ cover no-repeat;
+    position: relative;
+}
+.logo_ad{
+    position: absolute;
+    width: 25%;
+    background-color:rgba(210, 105, 30, 0.736);
+    height: 100px;
+    padding: 20px 30px;
+}
+.cout{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.cout h1{
+    font-size: 3rem;
+    font-weight: 500;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Courier New', Courier, monospace;
+}
+.baniere_lien{
+    display: flex;
+    background-color: brown;
+    align-self: center;
+}
+.baniere_lien li{
+    padding:5px 10px;
+    color: #fff;
+    font-weight: 600;
+    position: relative;
+}
+.lien_fleche::before{
+    content: '\25B7';
+    color: #fff;
+    font-size: .9rem;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.baniere_lien a{
+    margin-left: 10px;
+}
+
+
+
+
+
+/* ************ TECNIQUE ************* */
+.technique{
+    display: grid;
+    grid-template-columns: repeat(3, 28%);
+    grid-template-rows: auto;
+    width: 100%;
+    margin: 0 auto;
+    padding: 15px;
+    gap: 30px;
+    justify-content: center;
+    grid-auto-flow: row dense;
+}
+.yy
+{
+    grid-column: span 3;
+}
+.presentation_fac{
+    grid-column: 1/-1;
+    height: 500px;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(57, 48, 48, 0.681);
+    color: #fff;
+    margin: 15px 0;
+
+}
+/*  */
+.fac_title{
+    height: 100%;
+    width: 50%;
+    background: url(../img/banniere.jpg) center center /cover no-repeat;
+    /* position: relative; */
+}
+/* .fac_arrondi, .arrondi_fac{
+    height: 50%;
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);           dara pagaille
+    border: 1px solid #000;
+}
+.arrondi_fac{
+    border-radius: 50%;
+    right: 0 !important;
+    left: 100%;
+} */
+/* ****** */
+.items_footer{
+    display: flex;
+    justify-content: space-between;
+}
+.items_footer p{
+    display: flex;
+    align-items: center;
+}
+.fac_items a
+{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 80% 20%;
+    border-bottom: 1px solid #000;
+}
+.items_footer p:last-child{
+    background-color: aqua;
+    padding: 0 30px;
+}
+
+/* AUTRES FACULTES */
+.autre_faculte{
+    display: grid;
+    grid-template-columns: repeat(4, 20.4%);
+}
+.facInfo{
+    order: -1;
+}

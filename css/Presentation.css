@@ -1,0 +1,99 @@
+.info_banniere{
+    background: url("../img/IMG-20220909-WA0014.jpg")  center left / cover no-repeat ;
+    height: 400px;
+    position: relative;
+}
+.baniere_boite{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 5%;
+    background-color: rgba(35, 66, 80, 0.81);
+    color: #fff;
+    padding: 35px;
+    width: 30%;
+
+}
+.baniere_boite h1{
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 15px 0px;
+    border-bottom: #fff solid 1px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.baniere_boite p{
+    padding-bottom: 10px;
+    font-size: 1.5rem;
+    color: #ffb84d;
+}
+/* *****************    qui_sommes_nous     ***************** */
+.qui_sommes_nous{
+    margin: 70px auto;
+    width: 90%;
+    display: flex;
+    align-items: flex-start;
+    
+}
+.qui_containt{
+    width: 50%;
+    padding: 0 15px;
+    /* border: 1px solid #000; */
+}
+.qui_containt h1{
+    padding-bottom: 0 ;
+}
+.qui_souligne{
+    display: inline-block;
+    height: 5px;
+    width: 55px;
+    background-color: #ffb84d;
+}
+.qui_containt h2{
+    margin-top: 20px;
+}
+p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+/* *****************    missions & visions     ***************** */
+.order{
+    order: -1;
+}
+
+/* *****************    EQUIPE     ***************** */
+.equipe_titre{
+    text-align: center;
+    margin: 25px 0;
+}
+.grille_equipe{
+    display: grid;
+    grid-template-columns: repeat(4, 23%);
+    grid-template-rows: auto;
+    justify-content: space-between;
+    row-gap: 20px;
+    
+}
+
+.notre_equipe{
+    margin: 70px auto;
+    width: 90%;
+}
+.equipe_items{
+    text-align: center;
+}
+.equipe_items h3, .equipe_items p, .equipe_souligne{
+    margin-top: 10px;
+}
+.equipe_souligne{
+    display: inline-block;
+    height: 5px;
+    width: 55px;
+    background-color: #ffb84d;
+    left: 50%;
+}
+/* *****************    EQUIPE transition    ***************** */
+.equipe_items figure:hover{
+    transform: scale(1.1) skew(1deg);
+    transition: transform .3s ease;
+
+}

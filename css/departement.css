@@ -1,0 +1,75 @@
+/* **************************
+*******     Main      ***** 
+************************* **/
+/* *********** BANNIERE *********** */
+.banniereDep{
+    width: 100%;
+    height: 455px;
+    /* background-image: url(./img/banniere.jpg);
+    background-repeat: no-repeat;
+    background-position: center; */
+    background: url(../img/IMG-20220909-WA0013.jpg) center center/ cover no-repeat;
+    position: relative;
+}
+.logo_ad{
+    position: absolute;
+    width: 25%;
+    background-color:rgba(210, 105, 30, 0.736);
+    height: 100px;
+    padding: 20px 30px;
+}
+.cout{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.cout h1{
+    font-size: 3rem;
+    font-weight: 500;
+    background-color:rgba(210, 105, 30, 0.5);
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* *********** BANNIERE *********** */
+
+
+.descrip
+{
+  display: flex;
+  border: 1px solid #000;
+  justify-content:space-evenly;
+  width: 90%;
+  margin: 0 auto;
+}
+.paragrapheInfo
+{
+    width: 40%;
+    border-right: 2px solid;
+    font-size: 1.1rem;
+
+}
+.paragrapheInfo p
+{
+    margin: 10px 0;
+}
+.detail
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.detail li
+{
+    list-style: circle;
+}
+
+
+/* ***********************************
+  ************************    ****************** */

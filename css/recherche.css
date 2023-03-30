@@ -1,0 +1,186 @@
+
+/* ****************************************************/
+
+.baniertop
+{
+    height: 400px;
+    background-color: #000;
+    width: 100%;
+    background: url("../img/IMG-20220910-WA0021.jpg") center center / cover no-repeat;
+}
+.banierh1
+{
+   font-size: 2rem;
+   line-height: 1;
+   width: max-content;
+   text-transform: uppercase;
+   font-family: "Open Sans", sans-serif;
+   position: relative;
+}
+.banierh1 > h1
+{
+ margin-bottom: 40px;
+}
+.baniertop .souligneh1
+{
+    display: inline-block;
+    position: absolute;
+   top: 85%;
+    height: 4px;
+    width: 40%;
+    background-color: #fff;
+
+
+}
+.banierListe
+{
+    display: flex;
+    font-size: .70rem;
+     text-transform: uppercase;
+}
+.banierListe li::after
+{
+    content: '/';
+    margin: 0 5px;
+}
+.banierListe li:last-child::after{
+    content: none;
+}
+.baniertopconteneur
+{
+    height: 100%;
+    width: 70%;   color: #fff;
+    margin: 0 auto;
+    z-index: -4;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding-top:  5px;
+}
+.je_minscri
+{
+    margin-bottom: 30px;
+    width: max-content;
+    padding: 5px 15px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    background-color: #ff0000;
+}
+.baniertop p
+{
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+/* ********************************8 */
+
+.recherchebody
+{
+    width: 70%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 35%) 25%;
+    grid-template-rows: auto;
+    justify-content: space-evenly;
+    margin-top: 30px;
+}
+.recherchebody .gauche
+{
+    grid-column: 1 / span 2;
+}
+
+.droite_aside
+{
+    display: flex;
+    flex-direction: column;
+}
+.listeDesOption h2
+{
+    font-size: 1.5rem;
+    font-weight: 600;
+    border-bottom: .5rem solid #308014;
+    text-transform: uppercase;
+}
+.listeDesOption p
+{
+    margin: 0;
+}
+.listeDesOption .Sliste li
+{
+    position: relative;
+}
+.listeDesOption .Slistel >li::before
+{
+    content: '\21E8';
+    color: #ffd700;
+    font-size: 2rem;
+    position: absolute;
+    top: 20%;
+    left: 0;
+    transform: translateY(-50%);
+}
+.listeDesOption h2
+{
+margin-top: 10px;
+}
+.Sliste
+{
+    list-style: disc;
+}
+
+/************** DEBUT DE LA SIDEBAR  *****/
+
+.droite_aside
+{
+    align-self: start;
+}
+.serviceRecherche li
+{
+  margin: 10px 0;  
+}
+.droiteBoite h3
+{
+    padding: 10px;
+    text-transform: uppercase;
+    background-color: #333;
+    width: fit-content;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #fff;
+    display: inline-block;
+}
+
+.droiteBoite
+{
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.boite2
+{
+    color:  #fff;
+    background-color: #308014;
+}
+.boite1
+{
+    border: 1px solid #000;
+}
+.souligneClicable
+{
+    text-decoration: underline;
+     
+}
+.souligneClicable:hover
+{
+  color: blue;
+  transition: color .3s ease text-decoration .7s ease;
+  text-decoration: none;
+}
+.souligneClicable:active
+{
+    color: red;
+    transition: color .3s ease text-decoration .7s ease;
+
+}
+
+
+/************** FIN DE LA SIDEBAR  *****/

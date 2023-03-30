@@ -1,0 +1,214 @@
+/* **************************
+*******     Main      ***** 
+************************* **/
+/* *********** BANNIERE *********** */
+.banniere_ad{
+    width: 100%;
+    height: 455px;
+    /* background-image: url(./img/banniere.jpg);
+    background-repeat: no-repeat;
+    background-position: center; */
+    background: url(../img/IMG-20220909-WA0013.jpg) center center/ cover no-repeat;
+    position: relative;
+}
+.logo_ad{
+    position: absolute;
+    width: 25%;
+    background-color:rgba(210, 105, 30, 0.736);
+    height: 100px;
+    padding: 20px 30px;
+}
+.cout{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.cout h1{
+    font-size: 3rem;
+    font-weight: 500;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Courier New', Courier, monospace;
+}
+.baniere_lien{
+    display: flex;
+    background-color: brown;
+    align-self: center;
+}
+.baniere_lien li{
+    padding:5px 10px;
+    color: #fff;
+    font-weight: 600;
+    position: relative;
+}
+.lien_fleche::before{
+    content: '\25B7';
+    color: #fff;
+    font-size: .9rem;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.baniere_lien a{
+    margin-left: 10px;
+}
+/* *********** BANNIERE *********** */
+
+/* ::::::::::::::: MAIN :::::::::::::: */
+.grid_ad{
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+.droite_ad{
+    display: grid;
+    grid-template-columns: 35% 60% ;
+    padding-top: 50px;
+    gap: 5%;
+    background-color: #fff;
+    position: relative;
+    /* left: -20px; */
+    top: -80px;
+    bottom: 0;
+}
+.droite_aside{
+    align-self: start;
+    /* background-color: aqua; */
+    height: max-content;
+    margin: 0;
+}
+.droite_article{
+    padding-right: 10px;
+} 
+.side_ad{
+    background-color: gainsboro;
+}
+
+/* *********** nav *********** */
+.lien_aside{
+    display: flex;
+    flex-direction: column;
+    border-right: 2px solid #000;
+    width: 100%;
+    text-align: left;
+    padding: 0 30px;
+}
+.lien_aside > li >a{
+    width: 100%;
+    border-top: 1px solid #000;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.lien_aside > li >a:last-child{
+    border-bottom: 1px solid #000;
+}
+.lien_active_sousLien{
+    font-weight: 800;
+}
+.lien_aside li a:hover{
+    background-color: rgba(51, 51, 51, 0.175);
+    padding-left: 10px;
+    transition: background-color 1s, padding-left .3s;
+    border: transparent;
+}
+.sousLien_aside li a {
+    border-top: 1px solid #000;
+    opacity: .7;
+}
+.lien_aside > li a{
+    padding: 15px 0;
+    margin-left: 10px;
+    display: inline-block;
+}
+.sousLien_aside > li{
+    margin-left: 25px;
+}
+
+/* *********** section centrale *********** */
+.droite_article p{
+    margin-bottom: 20px;
+    line-height: 1.3;
+    font-size: 1.2rem;
+}
+.droite_article h1{
+    font-size: 2.5rem;
+    font-weight: 600;
+    text-align: center;
+}
+.frais_containt{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 45px;
+}
+.frais_containt table{
+    width: 100%;
+    text-align: center;
+    border: 4px solid #333;
+    border-collapse: collapse;
+}
+.frais_containt thead, tr, td{
+    border: 1.5px solid;
+    border-collapse: collapse;
+}
+.frais_containt caption{
+    margin-top: 20px;
+    margin-bottom: 7px;
+    background-color: #ffb84d;
+}
+caption span{
+    font-size: 1.4rem;
+    border-bottom: 1px solid #000;
+    border-color: aqua;
+    font-weight: 600;
+}
+tbody tr >td{
+    padding-left: 7px;
+}
+thead tr{
+    color: #fff;
+    background-color: #333;
+}
+table a{
+    text-decoration: underline;
+}
+table li{
+    margin: 15px;
+}
+table li:hover{
+    background-color: #ffb84d;
+    transition: background-color 2s;
+}
+
+/* **********   LEFT SECTION    ************* */
+.side_ad{
+    padding: 35px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-evenly; */
+    gap: 5%;
+}
+.side_ad p{
+    font-size: 1em;
+    opacity: .8;
+    font-weight: 800;
+}
+.ligne_bleu{
+    display: block;
+    position: relative;
+    left: 20%;
+    width: 60%;
+    height: 7px;
+    background-color: #ffb84d;
+}
+.more_info{
+    width: 50%;
+    align-self: center;
+    justify-self: flex-end;
+}
